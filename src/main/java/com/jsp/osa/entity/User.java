@@ -1,5 +1,6 @@
 package com.jsp.osa.entity;
 
+import com.jsp.osa.enums.Role;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -14,11 +15,7 @@ import java.util.List;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-
 public class User {
-
-
-
      @Id
      @GeneratedValue(strategy = GenerationType.IDENTITY)
      private int userId;
@@ -28,8 +25,7 @@ public class User {
     private String password;
     private String phoneNumber;
     private boolean verified;
-//    private Role role;
+    private Role role;
     private boolean isDelete;
-
 
 }
