@@ -1,6 +1,6 @@
 spring:
   application:
-    name: blood-sample-management-api
+    name: online-shopping-application
   mail:
     host: smtp.gmail.com
     port: 587
