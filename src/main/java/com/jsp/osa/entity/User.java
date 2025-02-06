@@ -15,6 +15,7 @@ import java.util.List;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
+@Inheritance(strategy = InheritanceType.JOINED)
 public class User {
      @Id
      @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -24,8 +25,8 @@ public class User {
     private String email;
     private String password;
     private String phoneNumber;
-    private boolean verified;
+    private boolean isEmailVerified;
     private Role role;
-    private boolean isDelete;
+    private boolean isDeleted;
 
 }
